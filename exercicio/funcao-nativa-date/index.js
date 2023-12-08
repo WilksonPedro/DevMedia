@@ -1,4 +1,4 @@
-const dataUltimoAcesso = new Date('2020/11/11 17:00:00');
+const dataUltimoAcesso = new Date('2023/12/5 19:00:00');
 const dataAtual = new Date();
 
 const hora = dataAtual.getHours();
@@ -10,6 +10,7 @@ const diferencaTime = timeAtual - timeUltimoAcesso;
 
 const milissegundosHora = 1000 * 60 * 60;
 const milissegundosDia = milissegundosHora * 24;
+const milissegundosSemana = milissegundosDia * 7;
 
 let msg = "";
 
@@ -21,7 +22,9 @@ if ( hora < 6 || hora >= 18 ) {
   msg = 'Boa tarde\n';
 }
 
-if ( diferencaTime > milissegundosDia ) {
+if ( diferencaTime > milissegundosSemana ) {
+  msg += 'Você esta  ausente ha Semanas!!!'
+} else if (diferencaTime > milissegundosDia) {
   msg += "Você está ausente há dias!!!";
 } else if (diferencaTime > milissegundosHora) {
   msg += "Você está ausente há horas!!!";
@@ -30,3 +33,4 @@ if ( diferencaTime > milissegundosDia ) {
 }
 
 console.log(msg);
+
