@@ -1,8 +1,11 @@
+import formataImc from './formatacaoDados.js';
+
 function calculaIMC(peso, altura)
 {
 
     let imc = peso / (altura * altura);
-    return imc;
+    let imcFormatado = formataImc(imc);
+    return imcFormatado;
 }
 
 function retornaStatusIMC(imc)
