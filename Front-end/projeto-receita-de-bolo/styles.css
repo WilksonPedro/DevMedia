@@ -1,0 +1,31 @@
+div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    color: chocolate;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20;
+    text-decoration: underline; 
+    color: chocolate;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+}
