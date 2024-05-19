@@ -1,0 +1,45 @@
+body {
+    font-family: "Tahoma", sans-serif;
+    margin: 0;
+}
+
+.secao {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    /* text-align: 
+    ele permiti alinhar textos e imagens no centro da página
+    atraves de uma div como pai por padrao ela é block assim
+    ocupando toda a largura da pagina e centralizando o conteudo
+    */
+}
+
+p {
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 28px;
+    width: 980px;
+    text-align: justify;
+}
+
+.secao {
+    background-color: #afddfb;
+}
+
+.cabecalho img {
+    width: 150px;
+}
+
+.cabecalho p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cabecalho a {
+    font-size: 18px;
+    color: #1d1d1d;
+    border-bottom: solid 2px #1d1d1d;
+    text-decoration: none;
+    margin: 0 10px;
+}
